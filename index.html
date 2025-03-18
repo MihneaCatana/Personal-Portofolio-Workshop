@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <h1>About Me</h1>
+        <p>
+          I am a passionate developer dedicated to creating innovative and
+          efficient solutions. With a background in web development and UI/UX
+          design, I bring ideas to life through modern technologies.
+        </p>
+        <p>
+          My expertise includes front-end and back-end development, ensuring
+          seamless and optimized user experiences. I constantly strive to
+          improve my skills and explore the latest technologies in the industry.
+        </p>
+      </div>
+      <img
+        src="https://randomuser.me/api/portraits/men/75.jpg"
+        alt="Profile Image"
+        class="about-image"
+      />
+    </section>
+
+    <section class="grid-section" id="projects">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>Advanced task management system.</p>
+        <button class="more-btn">More</button>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>Fitness tracking mobile app.</p>
+        <button class="more-btn">More</button>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>E-commerce web platform.</p>
+        <button class="more-btn">More</button>
+      </div>
+      <div class="card">
+        <h3>Project 4</h3>
+        <p>Innovative social networking app.</p>
+        <button class="more-btn">More</button>
+      </div>
+      <div class="card">
+        <h3>Project 5</h3>
+        <p>AI-powered chatbot assistant.</p>
+        <button class="more-btn">More</button>
+      </div>
+    </section>
+
+    <section class="flex-section" id="services">
+      <div class="landscape-card">
+        <h3>Service 1</h3>
+        <p>
+          Custom web development solutions for businesses, ensuring scalability
+          and performance.
+        </p>
+        <p>
+          From small business websites to complex web applications, we develop
+          solutions tailored to your needs.
+        </p>
+      </div>
+      <div class="landscape-card">
+        <h3>Service 2</h3>
+        <p>
+          Professional UI/UX design to enhance user experience, with
+          research-driven methodologies.
+        </p>
+        <p>
+          We create aesthetically pleasing and highly functional designs that
+          keep users engaged.
+        </p>
+      </div>
+      <div class="landscape-card">
+        <h3>Service 3</h3>
+        <p>
+          SEO optimization and performance improvements to boost online
+          visibility and engagement.
+        </p>
+        <p>
+          Our strategies ensure your website ranks higher on search engines and
+          performs efficiently.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-form" id="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="submitForm(event)">
+        <input
+          type="text"
+          id="name-input"
+          class="input-field"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          id="email-input"
+          class="input-field"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          class="input-field"
+          id="message-input"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit" class="more-btn">Send Message</button>
+      </form>
+    </section>
+  </body>
+</html>
